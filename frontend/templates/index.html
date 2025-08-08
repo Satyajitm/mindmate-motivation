@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMate Voice Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-robot"></i> MindMate</h1>
+            <p>Your AI Voice Assistant</p>
+        </header>
+
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot">
+                    <div class="message-content">Hello! I'm your MindMate assistant. How can I help you today?</div>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <button id="recordButton" class="record-button">
+                    <i class="fas fa-microphone"></i>
+                    <span>Hold to Speak</span>
+                </button>
+                <div class="or-divider">or</div>
+                <div class="text-input-container">
+                    <input type="text" id="userInput" placeholder="Type your message here...">
+                    <button id="sendButton" class="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="status" id="status">Ready to chat</div>
+    </div>
+
+    <!-- Audio element for playing responses -->
+    <audio id="audioPlayer" preload="auto"></audio>
+    
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', path='/js/main.js') }}"></script>
+</body>
+</html>

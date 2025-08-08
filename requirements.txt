@@ -1,0 +1,6 @@
+SpeechRecognition==3.10.0
+gTTS==2.5.1
+sounddevice==0.4.6
+soundfile==0.12.1
+openai==0.28.1
+python-dotenv==1.0.0
