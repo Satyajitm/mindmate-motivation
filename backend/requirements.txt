@@ -8,3 +8,4 @@ python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
 aiohttp==3.8.4
 typing-extensions==4.5.0
+gTTS==2.3.2
