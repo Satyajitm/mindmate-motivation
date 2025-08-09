@@ -36,7 +36,7 @@ function setupEventListeners() {
 // WebSocket Connection
 function connectWebSocket() {
     const protocol = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
-    const wsUrl = `wss://your-render-app-url.onrender.com/ws`;
+    const wsUrl = `wss://https://mindmate-motivation.onrender.com//ws`;
     
     socket = new WebSocket(wsUrl);
     
